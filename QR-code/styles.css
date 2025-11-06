@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: hsl(212, 45%, 89%);
+    font-family: "Outfit", sans-serif;
+    color: hsl(218, 44%, 22%);
+}
+
+.container {
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 15px;
+    max-width: 34rem; /* ~340px */
+    width: 90%; /* fluid on small screens, capped by max-width */
+    padding: 1.6rem;
+    margin: 7rem auto;
+    background: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+}
+
+.container img {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.8rem;
+}
+
+.container p {
+    color: hsl(218, 44%, 22%);
+    font-weight: 400;
+    padding: 0.8rem 0;
+    font-size: 1.4rem;
+}
+
+.container h2 {
+    font-weight: 700;
+    padding: 0.8rem 0;
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+
+/* Larger screens: make the card a fixed comfortable width */
+@media (min-width: 48rem) { /* 768px */
+    .container {
+        width: 34rem;
+        padding: 2rem;
+    }
+    .container h2 { font-size: 2rem; }
+    .container p { font-size: 1.6rem; }
+}
+
+/* Very small screens: reduce vertical spacing and font sizes */
+@media (max-width: 22.5rem) { /* 360px */
+    .container {
+        margin: 4rem auto;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    .container h2 { font-size: 1.6rem; }
+    .container p { font-size: 1.3rem; padding: 0.6rem 0; }
+}
+
